@@ -1,0 +1,70 @@
+{
+  "welcome": "Welcome to my website",
+  "description": "This is a developer's website under construction.",
+  "navbar": {
+    "start": "Home",
+    "about-me": "About Me",
+    "experience": "Experience",
+    "skills": "Skills"
+  },
+  "resume": "Software Engineer with 5 years of experience focused on frontend development. Skilled in JavaScript and TypeScript, with strong expertise in frameworks like React, Next.js, and React Native. Experienced in building scalable applications using Node.js and Express, as well as deploying cloud solutions with AWS and Kubernetes.",
+  "download": "Download CV",
+  "profile-tech": "I have experience with a variety of technologies, specializing in JavaScript and TypeScript using frameworks like Next.js and NestJS for frontend and backend development. I have worked in DevOps, cloud, and containerized environments, complementing my profile with a background in UX/UI design.",
+  "about-me": {
+    "title": "About Me",
+    "greetings": "Hi, I'm Dixon!",
+    "resume": "I'm passionate about technology, specializing in frontend development. My primary focus is creating attractive and functional interfaces, combining technical skills with a strong interest in UX/UI design to enhance user experience."
+  },
+  "cv": {
+    "title": "Experience",
+    "job": "Job",
+    "encora": {
+      "01": "Coordination with the UX team for the implementation of new components in React and JavaScript.",
+      "02": "Collaboration with DevOps and Architecture teams for deployment in various environments.",
+      "03": "Development of web components using React, JavaScript, TypeScript, and SASS.",
+      "04": "Implementation of microfrontends.",
+      "05": "Development of unit and integration tests with Jest.",
+      "06": "Utilization of Git and Gitflow for managing the development cycle."
+    },
+    "aira": {
+      "01": "Implementation of new features for the platform using Vue.js and React.",
+      "02": "Conducting implementations in Docker and Google Cloud environments.",
+      "03": "Development with Laravel, Node.js, and Elasticsearch.",
+      "04": "Component development with Vue.js and React."
+    },
+    "freelance": {
+      "01": "Development of chatbots on various platforms, such as Web and WhatsApp.",
+      "02": "Backend development using Node.js and Nest.",
+      "03": "Frontend development with Vue and React.",
+      "04": "Implementations in environments like IBM Cloud and Heroku."
+    },
+    "hellozum": {
+      "01": "Process automation - CI/CD with Jenkins.",
+      "02": "Dockerization of components using Docker.",
+      "03": "Full stack development of a platform with Laravel and Vue.",
+      "04": "Use of deployment tools in AWS."
+    },
+    "education": "Education",
+    "systemenginner": "Systems Engineering",
+    "language": {
+      "title": "Languages",
+      "spanish": "Spanish",
+      "native": "Native",
+      "english": "English"
+    },
+    "hobbies": {
+      "title": "Hobbies",
+      "pets": "Dog lover",
+      "music": "All kinds of music",
+      "love": "Passionate about the tech world"
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "Tools and Languages"
+  },
+  "footer": {
+    "social-media": "Social Media",
+    "copyright": "© Copyright {{date}} Dixon Albites. All rights reserved."
+  }
+}
