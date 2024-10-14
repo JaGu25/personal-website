@@ -1,0 +1,13 @@
+{
+  "welcome": "Bienvenido a mi web",
+  "description": "This is a developer's website under construction.",
+  "navbar": {
+    "start": "Inicio",
+    "about-me": "Sobre mi",
+    "portfolio": "Portafolio",
+    "contact": "Contacto"
+  },
+  "resume": "Ingeniero de software con alrededor de 5 años de experiencia, especializado en desarrollo full stack utilizando JavaScript, React y Node. Con conocimientos en Cloud Computing con AWS y en prácticas de DevOps, permitiéndole ofrecer soluciones escalables y eficiente.",
+  "download": "Descargar CV",
+  "profile-tech": "Tengo experiencia en diversas tecnologías, con especialización en JavaScript y TypeScript utilizando frameworks como Next.js y NestJS para frontend y backend. He trabajado en entornos DevOps, cloud y contenedores, complementando mi perfil con un background en diseño UX/UI."
+}

@@ -1,0 +1,13 @@
+{
+  "welcome": "Welcome to my website",
+  "description": "This is a developer's website under construction.",
+  "navbar": {
+    "start": "Start",
+    "about-me": "About me",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "resume": "Software engineer with around 5 years of experience, specialized in full stack development using JavaScript, React and Node. With knowledge in cloud computing with AWS and in DevOps practices, allowing him to offer scalable and efficient solutions.",
+  "download": "Download CV",
+  "profile-tech": "I have experience with various technologies, specializing in JavaScript and TypeScript using frameworks like Next.js and NestJS for frontend and backend. I have worked in DevOps, cloud, and containerized environments, with an additional background in UX/UI design."
+}

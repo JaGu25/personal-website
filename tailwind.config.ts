@@ -9,11 +9,17 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        "primary": "#FF5531",
+        "dark-text": "#0B0B0B",
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
     },
   },
-  plugins: [],
+  plugins: [
+
+    require('tailwindcss-animated')
+  ],
+  darkMode: 'class'
 };
 export default config;
