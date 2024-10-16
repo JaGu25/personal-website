@@ -39,7 +39,7 @@ const NavBar = async () => {
             <li className="text-darkmode">{menuOptions.contact}</li>
           </div>
           <div className="flex items-center gap-4">
-            <Lang lng={lng!} />
+            <Lang lng={lng ?? 'en'} />
             <ThemeSwitcher />
             <NavBarMenu menuOptions={menuOptions}/>
           </div>
