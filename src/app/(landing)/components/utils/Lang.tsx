@@ -14,7 +14,6 @@ const Lang: React.FC<Props> = ({ lng }) => {
 
   useEffect(() => {
     initLang();
-    handleChangeLng(lng);
   }, []);
 
   const handleChangeLng = (lng: string) => {
