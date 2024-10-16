@@ -1,9 +1,9 @@
-import NavBar from "@/app/(landing)/components/NavBar";
-import HeroContent from "@/app/(landing)/components/HeroContent";
+import NavBar from "@/app/(landing)/components/navegation/NavBar";
+import HeroContent from "@/app/(landing)/components/web/HeroContent";
 
 export default async function Home() {
   return (
-    <div>
+    <div className="relative">
       <NavBar />
       <HeroContent />
     </div>
