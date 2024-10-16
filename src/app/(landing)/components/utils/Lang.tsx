@@ -14,6 +14,7 @@ const Lang: React.FC<Props> = ({ lng }) => {
 
   useEffect(() => {
     initLang();
+    router.refresh();
   }, []);
 
   const handleChangeLng = (lng: string) => {
