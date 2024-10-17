@@ -1,45 +1,31 @@
 "use client";
-
-import { Language } from "@/app/(landing)/domain/language";
-import { initLang, setLanguage } from "@/app/i18n/actions";
-import { useRouter } from "next/navigation";
-import { useEffect } from "react";
+import { Language } from "@/app/landing/domain/language";
+import Link from "next/link";
 
 interface Props {
   lng: string;
 }
 
 const Lang: React.FC<Props> = ({ lng }) => {
-  const router = useRouter();
-
-  useEffect(() => {
-    initLang();
-  }, []);
-
-  const handleChangeLng = (lng: string) => {
-    setLanguage(lng);
-    router.refresh();
-  };
-
   return (
     <div className="flex gap-1">
-      <p
+      <Link
         className={`cursor-pointer ${
           lng == Language.ES && " border-b-2 border-primary"
         } text-darkmode`}
-        onClick={() => handleChangeLng("es")}
+        href={`/landing/es`}
       >
         ES
-      </p>
+      </Link>
       <p className="text-darkmode">|</p>
-      <p
+      <Link
         className={`cursor-pointer ${
           lng == Language.EN && " border-b-2 border-primary"
         } text-darkmode`}
-        onClick={() => handleChangeLng("en")}
+        href={`/landing/en`}
       >
         EN
-      </p>
+      </Link>
     </div>
   );
 };

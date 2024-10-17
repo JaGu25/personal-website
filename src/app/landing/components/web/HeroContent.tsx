@@ -2,15 +2,16 @@ import Image from "next/image";
 import React from "react";
 import developer from "@/assets/imgs/developer.png";
 import laptop from "@/assets/imgs/laptop.png";
-import Heading from "@/app/(landing)/components/typography/Heading";
-import { cookies } from "next/headers";
+import Heading from "@/app/landing/components/typography/Heading";
 import { useTranslation } from "@/app/i18n";
 import { LuDownload } from "react-icons/lu";
 import { FaLinkedin, FaGithub, FaTiktok } from "react-icons/fa";
 
-const HeroContent = async () => {
-  const cookieStore = cookies();
-  const lng = cookieStore.get("lng")?.value;
+interface Props {
+  lng: string;
+}
+
+const HeroContent: React.FC<Props> = async ({ lng }) => {
   const { t } = await useTranslation(lng, "common");
 
   return (
@@ -93,9 +94,9 @@ const HeroContent = async () => {
             >
               <path
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M1 5h12m0 0L9 1m4 4L9 9"
               />
             </svg>

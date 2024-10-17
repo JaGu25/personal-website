@@ -8,9 +8,7 @@ const ThemeSwitcher = () => {
     <label className="inline-flex items-center cursor-pointer">
       <input
         type="checkbox"
-        value=""
         className="sr-only peer"
-        defaultChecked={theme === "dark"}
         checked={theme === "dark"}
         onClick={() => setTheme(theme === "light" ? "dark" : "light")}
       />

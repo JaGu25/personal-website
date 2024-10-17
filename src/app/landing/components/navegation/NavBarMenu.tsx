@@ -5,17 +5,14 @@ import { MdClose } from "react-icons/md";
 
 import logo from "@/assets/imgs/logo.png";
 import Image from "next/image";
+import { useTranslation } from "@/app/i18n/client";
 
 interface IProps {
-  menuOptions: {
-    start: string;
-    aboutMe: string;
-    portfolio: string;
-    contact: string;
-  };
+  lng: string;
 }
 
-const NavBarMenu: React.FC<IProps> = ({ menuOptions }) => {
+const NavBarMenu: React.FC<IProps> = ({ lng }) => {
+  const { t } = useTranslation(lng, "common");
   const [isOpen, setIsOpen] = useState(false);
 
   const handleMenu = () => {
@@ -49,11 +46,11 @@ const NavBarMenu: React.FC<IProps> = ({ menuOptions }) => {
           </div>
           <ul className="flex flex-col text-lg gap-7 mt-10">
             <li className="text-primary font-semibold text-xl">
-              {menuOptions.start}
+            {t("navbar.start")}
             </li>
-            <li className="text-darkmode text-xl">{menuOptions.aboutMe}</li>
-            <li className="text-darkmode text-xl">{menuOptions.portfolio}</li>
-            <li className="text-darkmode text-xl">{menuOptions.contact}</li>
+            <li className="text-darkmode text-xl">{t("navbar.about-me")}</li>
+            <li className="text-darkmode text-xl">{t("navbar.portfolio")}</li>
+            <li className="text-darkmode text-xl">{t("navbar.contact")}</li>
           </ul>
         </div>
       )}
