@@ -8,7 +8,7 @@ interface Props {
   lng: string;
 }
 
-const Experience: React.FC<Props> = ({ lng }) => {
+const Experience: React.FC<Props> = () => {
   return (
     <div className="mt-20 md:mt-0">
       <div className="mb-8">
