@@ -23,17 +23,19 @@ const Footer: React.FC<Props> = async ({ lng }) => {
           </div>
           <div className="flex items-center gap-2 text-lg">
             <MdPhoneInTalk className="text-primary" />
-            <a href="tel:+51941923260">+51 941 923 260</a>
+            <a className="text-darkmode" href="tel:+51941923260">
+              +51 941 923 260
+            </a>
           </div>
           <div className="flex items-center gap-2 text-lg">
             <MdAlternateEmail className="text-primary" />
-            <a href="mailto:albitestapia25@gmail.com">
+            <a className="text-darkmode" href="mailto:albitestapia25@gmail.com">
               albitestapia25@gmail.com
             </a>
           </div>
           <div className="flex items-center gap-2 text-lg">
             <MdLocationOn className="text-primary" />
-            <p>Lima, Perú </p>
+            <p className="text-darkmode">Lima, Perú </p>
           </div>
         </div>
         <div>
@@ -57,7 +59,7 @@ const Footer: React.FC<Props> = async ({ lng }) => {
         </div>
       </footer>
 
-      <div className="w-full text-primary mr-auto text-center mt-20 mb-8">
+      <div className="w-full text-primary mr-auto text-center pt-20 pb-8">
         {t("footer.copyright", { date: new Date().getFullYear() })}
       </div>
     </div>
