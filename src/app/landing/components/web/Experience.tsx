@@ -23,7 +23,7 @@ const Experience: React.FC<Props> = async ({ lng }) => {
       <div className="flex flex-col lg:flex-row gap-4">
         <div className="flex-1 md:flex-[5]">
           <Heading size="text-3xl" colorFull>
-            {t("cv.encora.job")}
+            {t("cv.job")}
           </Heading>
           <ol className="mt-6 relative border-s border-gray-200 dark:border-gray-700">
             <li className="mb-10 ms-4">
