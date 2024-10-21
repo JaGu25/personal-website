@@ -13,9 +13,5 @@ export default function RootLayout({
     lng: string;
   };
 }>) {
-  return (
-    <html lang={lng}>
-      <body>{children}</body>
-    </html>
-  );
+  return <div lang={lng}>{children}</div>;
 }

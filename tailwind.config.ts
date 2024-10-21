@@ -11,6 +11,7 @@ const config: Config = {
       colors: {
         "primary": "#FF5531",
         "dark-text": "#0B0B0B",
+        "bg-card": "#48484840",
         background: "var(--background)",
         foreground: "var(--foreground)",
       },

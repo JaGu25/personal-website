@@ -15,7 +15,7 @@ const HeroContent: React.FC<Props> = async ({ lng }) => {
   const { t } = await useTranslation(lng, "common");
 
   return (
-    <main>
+    <main id="start">
       <div className="flex flex-col-reverse md:flex-row justify-between items-center pt-10 lg:pt-28 animate-fade-right animate-duration-[2000ms] animate-ease-in-out">
         <div className="flex-1 flex justify-center">
           <Image
@@ -30,7 +30,9 @@ const HeroContent: React.FC<Props> = async ({ lng }) => {
             Software Engineer
           </Heading>
           <p className="text-xl md:text-2xl text-darkmode">{t("resume")}</p>
-          <button
+          <a
+            href="https://dixonalbi.s3.amazonaws.com/Dixon+Albites+-+CV+-+2024.pdf"
+            target="_blank"
             className="p-4 text-darkmkode animate-bounce rounded-full font-bold uppercase flex items-center gap-3 transition-all duration-300 hover:scale-110"
             style={{
               background: "linear-gradient(90deg, #FF7D61 0%, #FFDA59 100%)",
@@ -38,7 +40,7 @@ const HeroContent: React.FC<Props> = async ({ lng }) => {
           >
             <p>{t("download")}</p>
             <LuDownload className="text-xl" />
-          </button>
+          </a>
           <div className="flex gap-8 text-darkmode">
             <a
               href="https://www.linkedin.com/in/dixon-albites-659648161/"
@@ -55,16 +57,21 @@ const HeroContent: React.FC<Props> = async ({ lng }) => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row justify-between items-center py-10 md:py-36 animate-fade-left animate-duration-[2000ms] animate-ease-in-out bg-darkmode">
+      <div
+        id="aboutMe"
+        className="flex flex-col md:flex-row justify-between items-center py-10 md:py-36 animate-fade-left animate-duration-[2000ms] animate-ease-in-out bg-darkmode"
+      >
         <div className="flex-1 flex flex-col gap-6 lg:gap-10 items-start">
           <div>
             <Heading size="text-xl mb-2" colorFull>
-              Sobre mi
+              {t("about-me.title")}
             </Heading>
-            <Heading size="text-2xl md:text-4xl">Hola, Soy Dixon!</Heading>
+            <Heading size="text-2xl md:text-4xl">
+              {t("about-me.greetings")}
+            </Heading>
           </div>
           <p className="text-xl md:text-2xl text-darkmode">
-            {t("profile-tech")}
+            {t("about-me.resume")}
           </p>
         </div>
         <div className="flex-1 flex justify-center mt-4 md:mt-0">
