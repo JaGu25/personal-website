@@ -2,10 +2,11 @@ import Image from "next/image";
 import React from "react";
 import developer from "@/assets/imgs/developer.png";
 import laptop from "@/assets/imgs/laptop.png";
-import Heading from "@/app/landing/components/typography/Heading";
+import Heading from "@/app/landing/(components)/typography/Heading";
 import { useTranslation } from "@/i18n";
 import { LuDownload } from "react-icons/lu";
 import { FaLinkedin, FaGithub, FaTiktok } from "react-icons/fa";
+import { cn } from "@/shared/utils/cn";
 
 interface Props {
   lng: string;
@@ -15,8 +16,14 @@ const HeroContent: React.FC<Props> = async ({ lng }) => {
   const { t } = await useTranslation(lng, "common");
 
   return (
-    <main id="start">
-      <div className="flex flex-col-reverse md:flex-row justify-between items-center pt-10 lg:pt-28 animate-fade-right animate-duration-[2000ms] animate-ease-in-out">
+    <main className="mt-20 md:mt-0" id="start">
+      <div
+        className={cn(
+          "flex flex-col-reverse md:flex-row justify-between items-center",
+          "pt-10 lg:pt-28",
+          "animate-fade-right animate-duration-[2000ms] animate-ease-in-out"
+        )}
+      >
         <div className="flex-1 flex justify-center">
           <Image
             src={developer}

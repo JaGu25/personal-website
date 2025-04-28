@@ -3,7 +3,7 @@ import React from "react";
 import logo from "@/assets/imgs/logo.png";
 import { FaGithub, FaLinkedin, FaTiktok } from "react-icons/fa";
 import { MdPhoneInTalk, MdAlternateEmail, MdLocationOn } from "react-icons/md";
-import Heading from "@/app/landing/components/typography/Heading";
+import Heading from "@/app/landing/(components)/typography/Heading";
 import { useTranslation } from "@/i18n";
 
 interface Props {

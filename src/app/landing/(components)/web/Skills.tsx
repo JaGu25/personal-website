@@ -1,4 +1,4 @@
-import Heading from "@/app/landing/components/typography/Heading";
+import Heading from "@/app/landing/(components)/typography/Heading";
 import javascript from "@/assets/imgs/javascript.png";
 import css from "@/assets/imgs/css.png";
 import html from "@/assets/imgs/html.webp";
@@ -74,7 +74,7 @@ const Skills: React.FC<Props> = async ({ lng }) => {
   const { t } = await useTranslation(lng, "common");
 
   return (
-    <div className="text-center py-32">
+    <div className="mt-20 md:mt-0" id="skills">
       <Heading size="text-xl mb-2" colorFull uppercase>
         {t("skills.title")}
       </Heading>

@@ -1,5 +1,5 @@
 "use client";
-import { Language } from "@/app/landing/domain/language";
+import { Language } from "@/app/landing/(domain)/language";
 import Link from "next/link";
 
 interface Props {

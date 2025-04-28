@@ -8,24 +8,25 @@ import { useCookies } from 'react-cookie'
 import resourcesToBackend from 'i18next-resources-to-backend'
 import LanguageDetector from 'i18next-browser-languagedetector'
 import { getOptions, languages, cookieName } from './settings'
+import { useLng } from '@/shared/providers/LngProvider'
 
 const runsOnServerSide = typeof window === 'undefined'
 
-// 
 i18next
   .use(initReactI18next)
   .use(LanguageDetector)
   .use(resourcesToBackend((language, namespace) => import(`./locales/${language}/${namespace}.json`)))
   .init({
     ...getOptions(),
-    lng: undefined, // let detect the language on client side
+    lng: undefined,
     detection: {
       order: ['path', 'htmlTag', 'cookie', 'navigator'],
     },
     preload: runsOnServerSide ? languages : []
   })
 
-export function useTranslation(lng, ns, options = {}) {
+export function useTranslation(ns, options = {}) {
+  const { lng } = useLng()
   const [cookies, setCookie] = useCookies([cookieName])
   const ret = useTranslationOrg(ns, options)
   const { i18n } = ret
@@ -48,7 +49,7 @@ export function useTranslation(lng, ns, options = {}) {
     useEffect(() => {
       if (cookies.i18next === lng) return
       setCookie(cookieName, lng, { path: '/' })
-    }, [lng, cookies.i18next])
+    }, [lng])
   }
   return ret
 }

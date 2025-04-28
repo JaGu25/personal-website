@@ -2,14 +2,14 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import logo from "@/assets/imgs/logo.png";
-import Lang from "@/app/landing/components/utils/Lang";
-import ThemeSwitcher from "@/app/landing/components/utils/ThemeSwitcher";
-import NavBarMenu from "@/app/landing/components/navegation/NavBarMenu";
+import Lang from "@/app/landing/(components)/utils/Lang";
+import ThemeSwitcher from "@/app/landing/(components)/utils/ThemeSwitcher";
+import NavBarMenu from "@/app/landing/(components)/navegation/NavBarMenu";
 import Link from "next/link";
 import { useTranslation } from "@/i18n/client";
-import FloatingActionButton from "@/app/landing/components/utils/FloatingActionButton";
+import FloatingActionButton from "@/app/landing/(components)/utils/FloatingActionButton";
 import { useEffect } from "react";
-import DownloadCV from "@/app/landing/components/utils/DownloadCV";
+import DownloadCV from "@/app/landing/(components)/utils/DownloadCV";
 
 interface Props {
   lng: string;
